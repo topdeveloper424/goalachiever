@@ -1,0 +1,54 @@
+{
+  "name": "chencha/share",
+  "description": "Share links with Laravel 5/6",
+  "keywords": [
+    "share",
+    "laravel",
+    "laravel5",
+    "laravel6"
+  ],
+  "version": "5.4.0",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "thujohn",
+      "email": "jonathan.thuau@gmail.com"
+    },
+    {
+      "name": "chencha",
+      "email": "jacob@chenchatech.com"
+    },
+    {
+      "name": "datashaman",
+      "email": "marlinf@datashaman.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.4.0",
+    "illuminate/support": "^5.0|^6.0"
+  },
+  "autoload": {
+    "psr-0": {
+      "Chencha\\Share": "src/"
+    },
+    "classmap": [
+        "tests/TestCase.php"
+    ]
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Chencha\\Share\\ShareServiceProvider"
+      ],
+      "aliases": {
+        "Share": "Chencha\\Share\\ShareFacade"
+      }
+    }
+  },
+  "minimum-stability": "dev",
+  "require-dev": {
+    "orchestra/testbench": "~3.0",
+    "mockery/mockery": "^0.9.4",
+    "guzzlehttp/guzzle": ">=5.3"
+  }
+}
